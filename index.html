@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>I am a headline made with HTML</h1>
+        <p id="useless-paragraph">Useless paragraph</p>
+        <button onclick="myFunction()">Toggle Visibility for the useless paragraph</button>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("useless-paragraph");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script> 
+    </body>
+</html>
