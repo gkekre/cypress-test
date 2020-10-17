@@ -1,0 +1,15 @@
+
+kind: pipeline
+name: default
+
+steps:
+    - name: run-test-cases
+      image: cypress/base
+      when:
+        status:
+        - failure
+        - success
+      commannds:
+        - npm install
+        - npm test
+    
