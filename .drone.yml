@@ -12,4 +12,13 @@ steps:
       commannds:
         - npm install
         - npm test
+    - name: result
+      image: node
+      when:
+        status:
+        - failure
+        - success
+      commands:
+        - cat mochawesome-report/mochawesome.json
+     
     
