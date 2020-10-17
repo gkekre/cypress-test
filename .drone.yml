@@ -9,7 +9,7 @@ steps:
       status:
       - failure
       - success
-    commannds:
+    commands:
       - npm install
       - npm test
   - name: result
@@ -20,5 +20,4 @@ steps:
       - success
     commands:
       - cat mochawesome-report/mochawesome.json
-    
-    
+      
