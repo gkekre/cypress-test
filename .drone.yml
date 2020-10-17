@@ -20,4 +20,5 @@ steps:
       - success
     commands:
       - cat mochawesome-report/mochawesome.json
+      - node parser.js
       
